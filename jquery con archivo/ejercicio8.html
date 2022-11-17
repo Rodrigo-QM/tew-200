@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 8 JQuery Selector</title>
+    <!-- script para llamar a jquery con CDN-->
+    <script src="jquery-3.6.1.js"></script>
+</head>
+<body>
+    <h1>Ejercicio 8 - Seleccionar selector con Class</h1>
+    <p class="parrafo">Yo soy Parrafo</p>
+    <p class="parrafo">Soy Parrafo 2</p>
+    <p class="parrafo">Soy Parrafo 3</p>
+    <p class="test">Soy Parrafo 4</p>
+    <button>Presione Aqui</button>
+    <p>Al presionar el boton Ocultara el Parrafo con class="parrafo".</p>
+    <!-- funciones de jquery-->
+    <script>
+        $(document).ready(function() {
+           $("button").click(function(){
+               $("p").hide();
+           }); 
+        });
+    </script>
+</body>

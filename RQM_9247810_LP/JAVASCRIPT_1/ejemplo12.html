@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 12</title>
+</head>
+<body>
+    <h1>JavaScript</h1>
+    <h2>Ejemplo 12 -Dado dos numeros realizar la suma</h2>
+    <h3>Utilizando imput document.write</h3>
+    <label>Ingrese Numero A</label>
+    <input type="text" id="txtA"><br>
+    <label>Ingrese Numero B</label>
+    <input type="text" id="txtB"><br>
+    <button id="btnSumar" onclick="sumar()">Sumar</button>
+    <p id="resultado"></p> 
+    <script>
+        function sumar(){
+            var a = document.getElementById("txtA").value;
+            var b = document.getElementById("txtB").value;
+            var suma = parseInt(a) + parseInt(b);
+            document.getElementById("resultado").innerHTML = "<b>La Suma Es: </b>"+suma;
+        }
+    </script>
+</body>
+</html>

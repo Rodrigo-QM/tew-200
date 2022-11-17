@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+</head>
+<body>
+    <h1>Ejercicio 1 - Condicional simple</h1>
+    <script>
+        var nombre, materia, nota;
+        nombre = prompt("Ingrese su Nombre");
+        materia = prompt("Ingrese una Materia");
+        nota = prompt("Ingrese su nota de Aprobacion");
+        if(nota >= 61){
+            var mostrar = nombre;
+            mostrar += " Esta aprobado con una nota de "+nota;
+            mostrar += " En la Materia "+materia;
+            document.write(mostrar);
+        }
+    </script>
+</body>
+</html>

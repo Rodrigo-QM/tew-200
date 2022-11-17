@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 9</title>
+</head>
+<body>
+    <h1>JavaScript</h1>
+    <h2>Ingreso y salida de dato</h2>
+    <h3>Ejemplo 9 - ingresa nombre, edad, fecha, nacimiento, celular</h3>
+    <h4>Utilizando alert y innerHTML</h4>
+    <p id="respuesta"></p>
+    <script>
+        var nombre = prompt("Ingrese su Nombre");
+        var edad = prompt("Ingrese su Edad");
+        var fechaNacimiento = prompt("Ingrese la fecha");
+        var celular = prompt("Ingrese su nro de celular");
+
+        var mostrar = " <b> Su nombre es :</b>" + nombre;
+        mostrar += "<b> y tienes: </b>"+edad,
+        mostrar += "<b> fecha de nacimiento: </b>"+fechaNacimiento;
+        mostrar += "<b> su nro de celular: </b>"+edad;
+
+        document.getElementById("respuesta").innerHTML = mostrar;
+
+    </script>
+</body>
+</html>
